@@ -1,3 +1,4 @@
+my_website是整個網站資料夾
 作為練習用的資料是來自genius_invokation卡牌遊戲的卡片相關資訊，
 使用mysql系統，將資料儲存在genius_invokation資料庫裡的all_card表中，
 每一筆資料代表一張(種)卡片，存入編號、名稱、類型共三項屬性。
