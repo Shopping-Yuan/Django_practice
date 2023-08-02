@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <head>
+    {% block title %}
+      <title>Local Library</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% block contend %}
+    <head2>Test_Index</head2>
+    <style>
+      table, th ,td {
+        border: solid;
+        border-collapse: collapse;
+      }
+    </style>
+    <table>
+      <thead>
+          <tr>
+              <th colspan="3">All Cards</th>
+          </tr>
+          <tr>
+            <th>Card ID</th>
+            <th>Card Name</th>
+            <th>Card Type</th>
+          </tr>
+      </thead>
+      <tbody>
+            {% for i in contend %}
+            <tr>
+              <td>{{i.card_ID}}</td> 
+              <td>{{i.card_name}}</td>
+              <td>{{i.card_type}}</td>
+            </tr>
+            {% endfor %}  
+      </tbody>
+    </table>
+    {% endblock %}
+  </body>
+</html>
