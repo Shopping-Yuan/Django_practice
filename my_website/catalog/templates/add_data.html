@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <form  action="http://127.0.0.1:8000/catalog/add_data/" method="post">
+  <form  action="{% url 'add_data_url' %}" method="post">
     {% csrf_token %}
     <table>
       {{ form.as_table }}
