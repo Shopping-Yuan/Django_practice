@@ -16,6 +16,8 @@ views.py由mysql資料庫抓取資料，並藉由template.py中的index.html模�
 3.在網頁上輸入資料並存入mysql資料庫中。(進入http://127.0.0.1:8000/catalog/add_data/)
 另外views/urls中的search函數，對應post.html模板，是網路上參考資料的內容(可以將輸入的文字即時顯示在網頁上)。
 
+4.目前新增搜尋和更新資料功能(/catalog/renew_data/)
+
 目前安裝的python libraries為:
 Django==4.2.3
 PyMySQL==1.1.0(尚未使用)
